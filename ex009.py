@@ -4,5 +4,5 @@ num = int(input('Insira um número inteiro: '))
 print(f'A tabuada de {num} é:')
 i = 1
 while i<=10:
-    print(num*i)
+    print(f'{num} x {i:2} = {num*i}')
     i+=1
