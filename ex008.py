@@ -3,7 +3,7 @@
 valor = float(input('Insira o valor em metros: '))
 print(f'Esse valor em centímetros equivale a {valor*100}cm e em milímetros equivale a {valor*1000}mm.')
 
-#Desafio: ler o valor em metros e exibir sua conversão de Km a Mm
+#Desafio: ler o valor em metros e exibir sua conversão de Km a Mm.
 metros = float(input('Insira o valor em metros: '))
 km = metros/1000
 hm = metros/100
