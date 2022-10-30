@@ -3,7 +3,7 @@
 
 import math
 
-catOposto = int(input('Insira o valor do cateto oposto: '))
-catAdjacente = int(input('Insira o valor do cateto adjacente: '))
+catOposto = float(input('Insira o valor do cateto oposto: '))
+catAdjacente = float(input('Insira o valor do cateto adjacente: '))
 
-print(f'O valor da hipotenusa é {math.hypot(catOposto, catAdjacente)}.')
+print(f'O valor da hipotenusa é {math.hypot(catOposto, catAdjacente):.2f}.')

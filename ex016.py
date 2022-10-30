@@ -5,3 +5,4 @@ import math
 
 num = float(input('Insira um número qualquer: '))
 print(f'Sua porção inteira é {math.trunc(num)}.')
+print(f'Sua porção intiera é {int(num)}.')

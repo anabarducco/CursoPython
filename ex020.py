@@ -11,3 +11,6 @@ aluno4 = input('Insira o nome do quarto aluno: ')
 listaAlunos = [aluno1, aluno2, aluno3, aluno4]
 
 print(f'A ordem sorteada foi: {random.sample(listaAlunos, k=len(listaAlunos))}.')
+
+random.shuffle(listaAlunos)
+print(f'A ordem sorteada foi: {listaAlunos}.')
