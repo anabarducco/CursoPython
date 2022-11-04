@@ -13,4 +13,8 @@ Repositório para projetos desenvolvidos no curso Python do canal do YouTube "Cu
 
 > Aula 7: Operadores aritméticos e ordem de precedência
 
+> Aula 8: Utilizando Módulos (Bibliotecas Python)
+
+> Aula 9: Manipulando Texto (fatiamento, análise e transformação de strings)
+
 > Exercícios e desafios
