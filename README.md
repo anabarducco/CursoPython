@@ -17,4 +17,8 @@ Repositório para projetos desenvolvidos no curso Python do canal do YouTube "Cu
 
 > Aula 9: Manipulando Texto (fatiamento, análise e transformação de strings)
 
+> Aula 10: Condicionais IF-ELSE
+
+> Aula 11: Adicionando Cores ao Terminal
+
 > Exercícios e desafios
