@@ -21,4 +21,12 @@ Repositório para projetos desenvolvidos no curso Python do canal do YouTube "Cu
 
 > Aula 11: Adicionando Cores ao Terminal
 
+> Aula 12: Condições Aninhadas IF-ELIF
+
+> Aula 13: Estrutura de Repetição FOR
+
+> Aula 14: Estrutura de Repetição WHILE
+
+> Aula 15: Interrompendo Repetições While com BREAK
+
 > Exercícios e desafios
