@@ -11,10 +11,11 @@ while True: #enquanto o usuário quiser cadastrar
     for contagem in range(0, jogador["Quantidade de Partidas"]): #para cada partida cadastra a qtd de gols
         golPartida = int(input(f'Quantidade de Gols na Partida {contagem + 1}: '))
         gols.append(golPartida)
-    jogador['Quantidade Gols Partidas'] = gols
+    jogador['Quantidade Gols Partidas'] = gols[:]
     jogador['Quantidade Gols Campeonato'] = sum(gols)
     jogadores.append(jogador.copy()) #copia os dados do dicionário para a lista
     jogador.clear() #limpa os dados do dicionário
+    gols.clear() #limpa os dados da lista de gols
     continuar = str(input('Deseja continuar? [S/N]: ')).upper() #verifica se o usuário deseja continuar
     if continuar == 'N': #condição de parada
         break
@@ -30,6 +31,11 @@ while True:
     id = int(input('Digite o ID do jogador para ver os detalhes de cada partida ou 999 para encerrar o programa: '))
     if id == 999:
         break
-    print(f'Detalhes das partidas jogadas pelo jogador {jogadores[id]["Nome"]}:')
-    print(f'{"Partida":^10}|{"Quantidade Gols":^20}')
-    # preciso fazer o sistema de visualização de detalhes de cada partida de cada jogador
+    if id >= len(jogadores):
+        print(f'Não existe um jogador com o código {id}.')
+    else:
+        print(f'Detalhes das partidas jogadas pelo jogador {jogadores[id]["Nome"]}:')
+        print(f'{"Partida":^10}|{"Quantidade Gols":^20}')
+        for indice, gols in enumerate(jogadores[id]['Quantidade Gols Partidas']):
+            print(f'{indice+1:^10}|{gols:^20}')
+        print(f'Total Campeonato: {jogadores[id]["Quantidade Gols Campeonato"]} gols.')
