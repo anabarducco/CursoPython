@@ -15,7 +15,8 @@ pessoa['Carteira de Trabalho'] = int(input('Número Carteira de Trabalho: ')) #c
 if pessoa['Carteira de Trabalho'] != 0:
     pessoa['Ano de Contratação'] = int(input('Ano de Contratação: ')) #chave ano de contratação = valor inserido
     anosTrabalhando = anoAtual - pessoa['Ano de Contratação']
-    pessoa['Anos Faltantes para Aposentadoria'] = 35 - anosTrabalhando  # chave idade aposentadoria - valor calculado (35 - anos trabalhando)
+    anosFaltantesAposentar = 35 - anosTrabalhando  # quantos anos falta para a pessoa aposentar
+    pessoa['Aposentadoria'] = pessoa['Idade'] + anosFaltantesAposentar
     pessoa['Salário'] = float(input('Salário: ')) #chave salário - valor inserido
 
 print(40*'--')
