@@ -4,8 +4,10 @@ No final, mostre o conteúdo da estrutura na tela. '''
 aluno = dict() #cria dicionário aluno
 aluno['nome'] = str(input('Insira o nome do aluno: ')).title() #chave nome - valor nome inserido
 aluno['média'] = float(input(f'Insira a média do aluno {aluno["nome"]}: ')) #chave média - valor média inserida
-if aluno['média'] < 5.0: #verifica a situação do aluno
+if aluno['média'] < 2.5: #verifica a situação do aluno
     aluno['situação'] = 'Reprovado'
+elif aluno['média'] < 6:
+    aluno['situação'] = 'Recuperação'
 else:
     aluno['situação'] = 'Aprovado'
 
