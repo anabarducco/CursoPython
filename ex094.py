@@ -25,7 +25,7 @@ while True: #até o usuário decidir parar
 mediaIdade = somaIdade/len(pessoas) #calcula a média de idade das pessoas cadastradas
 
 print(20*'--')
-print(f'Foram criadas {len(pessoas)} pessoas.')
+print(f'Foram cadastradas {len(pessoas)} pessoas.')
 print(f'A média de idade das pessoas cadastradas é {mediaIdade:.1f}.')
 print('As mulheres cadastradas foram: ')
 for pes in pessoas: #para cada pessoa da lista
@@ -34,4 +34,4 @@ for pes in pessoas: #para cada pessoa da lista
 print('As pessoas cadastradas com idade acima da média foram: ')
 for pes in pessoas: #para cada pessoa da lista
     if pes['Idade'] > mediaIdade: #se a idade da pessoa for maior que a da média
-        print(pes['Nome']) #printa o nome da pessoa
+        print(f'{pes["Nome"]} do sexo {pes["Sexo"]} com {pes["Idade"]} anos.') #printa o nome da pessoa

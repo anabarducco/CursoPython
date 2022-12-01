@@ -3,15 +3,16 @@ de detalhes do aproveitamento de cada jogador. '''
 
 jogador = dict() #dicionário de cada jogador
 jogadores = list() #lista com todos os jogadores
+gols = list() #lista de gols de cada partida
 
 while True: #enquanto o usuário quiser cadastrar
-    qtdGols = 0 #qtdGols sempre volta a 0
     jogador["Nome"] = str(input('Nome do Jogador: ')).title() #chave nome - valor inserido
     jogador["Quantidade de Partidas"] = int(input('Quantidade de Partidas Jogadas: ')) #chave qtd partidas - valor inserido
     for contagem in range(0, jogador["Quantidade de Partidas"]): #para cada partida cadastra a qtd de gols
-        jogador[f"Quantidade Gols Partida {contagem+1}"] = int(input(f'Quantidade de Gols na Partida {contagem+1}: '))
-        qtdGols += jogador[f"Quantidade Gols Partida {contagem+1}"] #calcula a qtd de gols totais do campeonato
-    jogador["Quantidade Gols Campeonato"] = qtdGols #chave qtd gols campeonato - valor calculado em qtdGols
+        golPartida = int(input(f'Quantidade de Gols na Partida {contagem + 1}: '))
+        gols.append(golPartida)
+    jogador['Quantidade Gols Partidas'] = gols
+    jogador['Quantidade Gols Campeonato'] = sum(gols)
     jogadores.append(jogador.copy()) #copia os dados do dicionário para a lista
     jogador.clear() #limpa os dados do dicionário
     continuar = str(input('Deseja continuar? [S/N]: ')).upper() #verifica se o usuário deseja continuar
