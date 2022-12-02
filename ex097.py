@@ -8,11 +8,13 @@ Olá, Mundo!
 
 
 def escreva(txt):
-    tamanho_texto = len(txt)
+    tamanho_texto = len(txt) + 4
     print(tamanho_texto*'~')
-    print(txt)
+    print(f'  {txt}  ')
     print(tamanho_texto*'~')
 
 
+escreva('Ana Beatriz')
+escreva('Olá, Mundo!')
 frase = str(input('Escreva uma frase qualquer: '))
 escreva(frase)
