@@ -1,0 +1,12 @@
+Nome: Ana Beatriz
+Idade: 20
+Nome: João Vitor
+Idade: 20
+Nome: Lucimeire
+Idade: 43
+Nome: Paulo
+Idade: 45
+Nome: Ricardo
+Idade: 59
+Nome: Lucia
+Idade: 54
