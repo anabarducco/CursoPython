@@ -29,4 +29,20 @@ Repositório para projetos desenvolvidos no curso Python do canal do YouTube "Cu
 
 > Aula 15: Interrompendo Repetições While com BREAK
 
+> Aula 16: Tuplas
+
+> Aula 17: Listas pt. 1 (listas simples)
+
+> Aula 18: Listas pt. 2 (listas compostas)
+
+> Aula 19: Dicionários
+
+> Aula 20: Funções pt. 1
+
+> Aula 21: Funções pt. 2
+
+> Aula 22: Módulos e Packages
+
+> Aula 23: Tratamentos de Erros e Exceções
+
 > Exercícios e desafios
